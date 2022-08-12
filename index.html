@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220802213711">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ac24e3b1-438b-45ac-b790-8d5bc846d4a3&amp;lang=ru_RU&_v=20220802213711" type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__inner">
+				<button class="header__burger"><picture><source srcset="img/burger.webp" type="image/webp"><img src="img/burger.png" alt=""></picture></button>
+				<a class="header__logo" href="#"><img src="img/logo.svg" alt=""></a>
+				<a class="header__phone" href="tel:84951367733"><img src="img/phone.svg" alt=""></a>
+				<div class="header__menu">
+					<nav class="header__nav">
+						<ul>
+							<li>
+								<a href="#about" class="js-scroll-to">О нас</a>
+								<a href="#menu" class="js-scroll-to">Меню</a>
+								<a href="#interior" class="js-scroll-to">Интерьер</a>
+							</li>
+							<li>
+								<a href="#contacts" class="js-scroll-to">Контакты</a>
+								<a href="tel:84951367733">8 495 136 77 33</a>
+							</li>
+						</ul>
+					</nav>
+					<button class="header__menu-close js-close-menu"></button>
+				</div>
+			</div>
+		</header>
+		<main class="main-page">
+			<section class="main">
+				<div class="main__slider">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide swiper-slide_1"></div>
+							<div class="swiper-slide swiper-slide_2"></div>
+							<div class="swiper-slide swiper-slide_3"></div>
+							<div class="swiper-slide swiper-slide_4"></div>
+							<div class="swiper-slide swiper-slide_5"></div>
+						</div>
+					</div>
+				</div>
+				<div class="main__wrapper">
+					<h1 class="main__title">Место сбора<br> друзей <span class="main__title_color">неизменно</span></h1>
+				</div>
+				<a href="#form" class="main__button button js-scroll-to">Забронировать</a>
+			</section>
+			<section class="front-block about" id="about">
+				<div class="about__container">
+					<div class="about__wrapper">
+						<div class="about__item">
+							<div class="about__person"><picture><source srcset="img/person.webp" type="image/webp"><img src="img/person.png" alt=""></picture></div>
+						</div>
+						<div class="about__item">
+							<div class="about__head">
+								<span class="about__subtitle subtitle">Андрей Зайкин</span>
+								<span class="about__title title">О нас</span>
+							</div>
+							<div class="about__description">
+								<span class="about__quote">Крафт-бар от создателей пиццерии «Радиола» и&nbsp;бара-музея «Слоны и Мамонты».</span>
+								<span class="about__text">Тщательно проработанное меню, 18 кранов отборного крафта и интерьер, детали которого можно разглядывать целый вечер. Необычная подача, внимательный персонал и уникальная «атмосфера» нашего заведения – одни из основных наших ценностей.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="front-block menu" id="menu">
+				<div class="menu__container">
+					<span class="menu__subtitle subtitle subtitle_color">Меню</span>
+					<div data-tabs class="menu__tabs tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _tab-active">Бар</button>
+							<span class="tabs__line"></span>
+							<button type="button" class="tabs__title">Едa</button>
+						</nav>
+						<div data-tabs-body class="tabs__content menu-list">
+							<div class="menu-list__wrapper">
+								<div class="menu-list__item">
+									<div class="menu-list__price menu-priceList">
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Post Nitro Lager</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">350&#8381;</span>
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Ballintine stout</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">400&#8381;</span>
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Jaws Weizen</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">350&#8381;</span>
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Rebel Apple Дикий крест</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">420&#8381;</span>
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Post Fruit Cider</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">350&#8381;</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="menu-list__item menu-list__item_pic"><picture><source srcset="img/kran.webp" type="image/webp"><img src="img/kran.png" alt=""></picture></div>
+								<div class="menu-list__item">
+									<div class="menu-list__price menu-priceList">
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Delirium Red</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">620&#8381;</span>
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Post Cider Alco Free</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">350&#8381;</span>
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Post IPA</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">400&#8381;</span>
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Jaws Pilsner</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">400&#8381;</span>
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Post Lager</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">350&#8381;</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="menu-list__wrapper menu-list__wrapper_eda">
+								<div class="menu-list__item">
+									<div class="menu-list__price menu-priceList">
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Стейк Стриплойн</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">2000&#8381;</span>
+											</div>
+											<div class="menu-priceList__ingredients">
+												Премиальный говяжий стейк, подаётся со свежими овощами и нежным сливочным соусом
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Тигровые креветки</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">850&#8381;</span>
+											</div>
+											<div class="menu-priceList__ingredients">
+												Большие свежие креветки, обжаренные с луком и чесноком, подаются с соевым соусом и горчицей
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Гамбургер</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">600&#8381;</span>
+											</div>
+											<div class="menu-priceList__ingredients">
+												Неизменная классика: сочная говяжья котлета, свежеиспеченная булочка, фермерские овощи под соусом тар-тар
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Чизбургер</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">700&#8381;</span>
+											</div>
+											<div class="menu-priceList__ingredients">
+												Неизменная классика: сочная говяжья котлета, свежеиспеченная булочка, фермерские овощи, сыр чеддер под соусом тар-тар
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Салат с креветками и рукколой</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">600&#8381;</span>
+											</div>
+											<div class="menu-priceList__ingredients">
+												Свежие креветки с зеленью и томатами, дополненные нежнейшим сыром "пармезан"
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Тёплый салат с говядиной</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">650&#8381;</span>
+											</div>
+											<div class="menu-priceList__ingredients">
+												Cытный и сочный салат с овощами, сыром и нежной говядиной под соусом "дор-блю"
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Тортилья с сыром и халапеньо</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">500&#8381;</span>
+											</div>
+											<div class="menu-priceList__ingredients">
+												Лёгкая и острая закуска с сыром "Моцарелла"
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="menu-list__item">
+									<div class="menu-list__price menu-priceList">
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Тортилья с авокадо и вялеными томатами</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">600&#8381;</span>
+											</div>
+											<div class="menu-priceList__ingredients">
+												Лёгкая закуска с кремовым авокадо, вялеными томатами орехами кешью и сыром "Моцарелла"
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Жареные куриные крылышки</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">600&#8381;</span>
+											</div>
+											<div class="menu-priceList__ingredients">
+												Сочные куриные крылья с овощами и сырным соусом
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Сырные палочки</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">400&#8381;</span>
+											</div>
+											<div class="menu-priceList__ingredients">
+												Аппетитные палочки из сыра моцарелла с брусничным соусом
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Луковые кольца</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">400&#8381;</span>
+											</div>
+											<div class="menu-priceList__ingredients">
+												Ароматная закуска, идеально подходит как к светлому, так и тёмному пиву
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Картофель по-деревенски</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">300&#8381;</span>
+											</div>
+											<div class="menu-priceList__ingredients">
+												Порция хрустящих долек картофеля, обжаренных в растительном масле с ароматными специями
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Картофель фри</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">300&#8381;</span>
+											</div>
+											<div class="menu-priceList__ingredients">
+												Порция хрустящих, золотистых, обжаренных во фритюре соломок отборного картофеля
+											</div>
+										</div>
+										<div class="menu-priceList__item">
+											<div class="menu-priceList__wrap">
+												<span class="menu-priceList__name">Чесночные гренки</span>
+												<span class="menu-priceList__line"></span>
+												<span class="menu-priceList__price">400&#8381;</span>
+											</div>
+											<div class="menu-priceList__ingredients">
+												Пикантно-острые кусочки хлеба, обжаренные до хрустящей корочки в растительном масле, сдобренные специями
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="menu__bottom">
+						<span class="menu__subtitle subtitle subtitle_color">Изучи меня полностью</span>
+						<div class="menu__bottom-actions menu-actions">
+							<a href="img/eda.pdf" class="menu-actions__button button">Меню с едой</a>
+							<a href="img/bar_new.pdf" class="menu-actions__button button">Барное меню</a>
+						</div>
+						<div class="menu__bottom-pic"><picture><source srcset="img/menu.webp" type="image/webp"><img src="img/menu.png" alt=""></picture></div>
+					</div>
+				</div>
+				<div class="menu__pic menu__pic_left"><picture><source srcset="img/1.webp" type="image/webp"><img src="img/1.png" alt=""></picture></div>
+				<div class="menu__pic menu__pic_right"><picture><source srcset="img/2.webp" type="image/webp"><img src="img/2.png" alt=""></picture></div>
+			</section>
+			<section class="front-block interior" id="interior">
+				<span class="interior__title title">Наш интерьер</span>
+				<div class="interior__slider swiper swiper_interior">
+					<div class="interior__wrapper swiper-wrapper">
+						<a class="interior__slide swiper-slide">
+							<picture><source srcset="img/interior1.webp" type="image/webp"><img src="img/interior1.jpg" alt=""></picture>
+						</a>
+						<a class="interior__slide swiper-slide">
+							<picture><source srcset="img/interior3.webp" type="image/webp"><img src="img/interior3.jpg" alt=""></picture>
+						</a>
+						<div class="interior__slide swiper-slide swiper-slide_small">
+							<a>
+								<picture><source srcset="img/interior4.2.webp" type="image/webp"><img src="img/interior4.2.jpg" alt=""></picture>
+							</a>
+							<a>
+								<picture><source srcset="img/interior4.1.webp" type="image/webp"><img src="img/interior4.1.jpg" alt=""></picture>
+							</a>
+						</div>
+						<a class="interior__slide swiper-slide">
+							<picture><source srcset="img/interior5.webp" type="image/webp"><img src="img/interior5.jpg" alt=""></picture>
+						</a>
+						<a class="interior__slide swiper-slide">
+							<picture><source srcset="img/interior7.webp" type="image/webp"><img src="img/interior7.jpg" alt=""></picture>
+						</a>
+						<div class="interior__slide swiper-slide swiper-slide_small">
+							<a>
+								<picture><source srcset="img/interior2.1.webp" type="image/webp"><img src="img/interior2.1.jpg" alt=""></picture>
+							</a>
+							<a>
+								<picture><source srcset="img/interior2.2.webp" type="image/webp"><img src="img/interior2.2.jpg" alt=""></picture>
+							</a>
+						</div>
+						<a class="interior__slide swiper-slide">
+							<picture><source srcset="img/interior8.webp" type="image/webp"><img src="img/interior8.jpg" alt=""></picture>
+						</a>
+						<a class="interior__slide swiper-slide">
+							<picture><source srcset="img/interior9.webp" type="image/webp"><img src="img/interior9.jpg" alt=""></picture>
+						</a>
+						<div class="interior__slide swiper-slide swiper-slide_small">
+							<a>
+								<picture><source srcset="img/interior6.1.webp" type="image/webp"><img src="img/interior6.1.jpg" alt=""></picture>
+							</a>
+							<a>
+								<picture><source srcset="img/interior6.2.webp" type="image/webp"><img src="img/interior6.2.jpg" alt=""></picture>
+							</a>
+						</div>
+						<a class="interior__slide swiper-slide">
+							<picture><source srcset="img/interior10.webp" type="image/webp"><img src="img/interior10.jpg" alt=""></picture>
+						</a>
+						<a class="interior__slide swiper-slide">
+							<picture><source srcset="img/interior11.webp" type="image/webp"><img src="img/interior11.jpg" alt=""></picture>
+						</a>
+						<a class="interior__slide swiper-slide">
+							<picture><source srcset="img/interior22.webp" type="image/webp"><img src="img/interior22.jpg" alt=""></picture>
+						</a>
+						<a class="interior__slide swiper-slide">
+							<picture><source srcset="img/interior23.webp" type="image/webp"><img src="img/interior23.jpg" alt=""></picture>
+						</a>
+						<div class="interior__slide swiper-slide swiper-slide_small">
+							<a>
+								<picture><source srcset="img/interior21.webp" type="image/webp"><img src="img/interior21.jpg" alt=""></picture>
+							</a>
+							<a>
+								<picture><source srcset="img/interior20.webp" type="image/webp"><img src="img/interior20.jpg" alt=""></picture>
+							</a>
+						</div>
+						<a class="interior__slide swiper-slide">
+							<picture><source srcset="img/interior24.webp" type="image/webp"><img src="img/interior24.jpg" alt=""></picture>
+						</a>
+					</div>
+					<div class="swiper__actions">
+						<button type="button" class="swiper__button swiper__button_prev"></button>
+						<div class="swiper-pagination js-pagination"></div>
+						<button type="button" class="swiper__button swiper__button_next"></button>
+					</div>
+				</div>
+			</section>
+			<section class="front-block booking" id="form">
+				<div class="booking__container">
+					<span class="booking__subtitle subtitle subtitle_color">Бронирование</span>
+					<span class="booking__title title title_color">Ждем вас в гости!</span>
+					<span class="booking__subtitle subtitle subtitle_color booking__subtitle_success">Спасибо, ваша заявка отправлена!</span>
+					<form action="#" class="booking__form form js-form-booking" id="js-form-booking">
+						<div class="form__field">
+							<input type="text" name="name" class="form__input" data-validate-field="name" placeholder="Ваше имя" autocomplete="off">
+							<picture><source srcset="img/name.webp" type="image/webp"><img src="img/name.png" alt=""></picture>
+						</div>
+						<div class="form__field">
+							<input type="text" name="date" class="form__input" data-validate-field="date" id="date" placeholder="Дата" autocomplete="off">
+							<picture><source srcset="img/date.webp" type="image/webp"><img src="img/date.png" alt=""></picture>
+						</div>
+						<div class="form__field">
+							<input type="text" name="time" class="form__input" data-validate-field="time" placeholder="Время" autocomplete="off">
+							<img src="img/time.svg" alt="">
+						</div>
+						<div class="form__field">
+							<input type="text" name="phone" class="form__input js-phone-mask" placeholder="+7(___)___-__-__" id="phone" data-validate-field="myField" autocomplete="off">
+							<img src="img/phone-contact.svg" alt="">
+						</div>
+						<div class="form__field">
+							<input type="text" name="people" class="form__input" data-validate-field="count" placeholder="Кол-во человек" autocomplete="off">
+							<picture><source srcset="img/ppl.webp" type="image/webp"><img src="img/ppl.png" alt=""></picture>
+						</div>
+						<button class="booking__form-button form__button button">Забронировать стол</button>
+					</form>
+				</div>
+			</section>
+			<section class="front-block contact" id="contacts">
+				<div id="map" class="contact__map"></div>
+				<div class="contact__container">
+					<div class="contact__inner">
+						<div class="contact__wrapper">
+							<span class="contact__subtitle subtitle">Ресторан: <span class="contact__subtitle_ff">«Post Pub»</span></span>
+							<span class="contact__title title title_color">Контакты</span>
+							<div class="contact__field">
+								<span class="contact__adress">Большая Почтовая улица, дом 28, корпус 4</span>
+								<span class="contact__time">Режим работы 14:00 - 00:00</span>
+							</div>
+							<div class="contact__field">
+								<div class="contact__field-list contact__field-list_phone">
+									<ul>
+										<li><a class="contact__phone" href="tel:84951367733">8 495 136 77 33</a></li>
+									</ul>
+								</div>
+								<div class="contact__field-list">
+									<ul>
+										<li><a class="contact__mail" href="mailto:bronnaya@postpub.ru">bronnaya@postpub.ru</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="contact__field social">
+								<!-- <a href="#" class="social__item"><picture><source srcset="data:image.webp;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB5ZfPS1RRFMfPVBa06Af9gFzUEBGU/SKiEARtURC0CNqILYyICCoU2laarVNsWxRC4B8QgUZmbgwjMlsEQTWCgSHoSFD2w7x9D/f78Hh5M/PGGWnRFz68efeec8/9cd69d0T+Fznn1oF60AuGQaMstRj0NHgMvrqF+q71Um4x6GXQD36ZgJOgHdSCAZaVpwMMepFBZ0zQLOjQoMZ2JZgD76QUMWgTg34zQcfBLY40FeNXR7sufV8hRYhTpslzCtSZqgnQCXpTqdRAgWZq+HwhCYNuMGv624z0Dbhtp9f4VHIWhsN1xvsz+h/JF3Q9aGZQq4+gNZczl0Xrp2mfAZsCG83+6TjnLWZNrTIcTY3kn6kGrr9NwO2BzR7WPbGFB8DzIOgQuAG2SgExqd4G/lOgKsb2POuv2sIMC3W9WsB+SSDY7TLrqYq++VkdVA6fbtrU2sIsnR+EU5ajkc3ObyhzbGwQ3AU/wE9wIo+v5tBMWHgWjJqR9IBjMc5rnE+wLO0mwAVw1PmvQztUnyf4Dvr1x1WuYkfem458Ao1gI+vGWJ7lUmnGa/5MsvyS5J+5BtrdlAKGOqJHpiN2a+10/K7x3Gtmo1kKCDb3Xbj+BRzSzAvVZ3A4qPvCuusJ2xuh/WopRhzlVBA8ypmWhG1U0n5EipXzSanaxvcM3zuKaCM6gO6FdcsS+EeHhuaG7hFpvl9JOv3QcT77pIQOHJT5E7AHzII2dKItQRvVfL6UYsXPTfXK+auV6hDYab4C3RHTOfyXO79JfZDFyvn94Y/zO2aGnXroFioT1wnnLyaq7ri2kyyBapC2FWAMDIEzYBTsBu3ic+M1Ap0LfKPPt0cWK+eP6VB3nLls4Pc1U9dqyp+yrEoWKzjXmMb1/teUxy7aI7rAWucvJ+NSipw/iLRhPR/2FbBNu/m9IkrSPilVTLyKImyjvV+vYCflXwiBq91S/Pspp/4Cn1OKgbWnGwIAAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgB5ZfPS1RRFMfPVBa06Af9gFzUEBGU/SKiEARtURC0CNqILYyICCoU2laarVNsWxRC4B8QgUZmbgwjMlsEQTWCgSHoSFD2w7x9D/f78Hh5M/PGGWnRFz68efeec8/9cd69d0T+Fznn1oF60AuGQaMstRj0NHgMvrqF+q71Um4x6GXQD36ZgJOgHdSCAZaVpwMMepFBZ0zQLOjQoMZ2JZgD76QUMWgTg34zQcfBLY40FeNXR7sufV8hRYhTpslzCtSZqgnQCXpTqdRAgWZq+HwhCYNuMGv624z0Dbhtp9f4VHIWhsN1xvsz+h/JF3Q9aGZQq4+gNZczl0Xrp2mfAZsCG83+6TjnLWZNrTIcTY3kn6kGrr9NwO2BzR7WPbGFB8DzIOgQuAG2SgExqd4G/lOgKsb2POuv2sIMC3W9WsB+SSDY7TLrqYq++VkdVA6fbtrU2sIsnR+EU5ajkc3ObyhzbGwQ3AU/wE9wIo+v5tBMWHgWjJqR9IBjMc5rnE+wLO0mwAVw1PmvQztUnyf4Dvr1x1WuYkfem458Ao1gI+vGWJ7lUmnGa/5MsvyS5J+5BtrdlAKGOqJHpiN2a+10/K7x3Gtmo1kKCDb3Xbj+BRzSzAvVZ3A4qPvCuusJ2xuh/WopRhzlVBA8ypmWhG1U0n5EipXzSanaxvcM3zuKaCM6gO6FdcsS+EeHhuaG7hFpvl9JOv3QcT77pIQOHJT5E7AHzII2dKItQRvVfL6UYsXPTfXK+auV6hDYab4C3RHTOfyXO79JfZDFyvn94Y/zO2aGnXroFioT1wnnLyaq7ri2kyyBapC2FWAMDIEzYBTsBu3ic+M1Ap0LfKPPt0cWK+eP6VB3nLls4Pc1U9dqyp+yrEoWKzjXmMb1/teUxy7aI7rAWucvJ+NSipw/iLRhPR/2FbBNu/m9IkrSPilVTLyKImyjvV+vYCflXwiBq91S/Pspp/4Cn1OKgbWnGwIAAAAASUVORK5CYII=" alt=""></picture></a> -->
+								<a href="https://vk.com/postpubmoscow " class="social__item"><picture><source srcset="data:image.webp;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAiCAYAAAA3WXuFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKvSURBVHgB7ZY/aBRBFMZnU1qYE0O0ELwYTScGrETQS6GNogiCQdQoaiGCZwRLvUINQTSRgE1S5ApR0dagIhIRRBFBBBWD4kXxT+GfREUIHDp+L/ett67zNrtHUmUf/Jjded9782Z2dnaNSS211GaZedbaJrQDoDnkmwAPQKfneePSAW0WTT9YpuT7ALqgH3I5Ed+Fpl3GDbnegDzinkhBj3DTAIZDonrQBi5DeIAJX6Opc2h9y4EMaPInESjmLJojoKjEyXjzRfgd9Br3jLrBGMjwXuy0UQy+jdSsDfVn2X9SicvTP1nQDQ46xyFcBCZAgfeDDHyoJG5TCroPSmCBI0aKfS8av2MVkxSUQc6DH2Ae769I8rgF4Xo3+3YpMY/BR+7Pv53XwWf/0YQCGsE3cCFQYKyCOPuSTELRH6e+I+xopeOUEug/44MJCxoEv/6ZfVW7lNpuoyQ7w5XIKv4h7rUXssyKZiUH2QxW8PqYQ9fAlSv5W8GVLMPHNhzhv8UkWyI078AXFi/aOoeuD5TBEhNlELRzVnlTo3Hf9JLFDv96jlGIm7AIxkGLmQFD3qMsKBM3IMOlHrFyUE1/QfICyWE8kCSoBfwEN01CQ0w92Ae2Rmg6uUo7TFyDeBOD+k0C4+r6dht4ik5ekK/aW60lP5ykKFs99TvAfl73KFo5cD+BeyaJydvAxBen2oj2/4Oxh/fbFP0G+k+YhEXt5J4aiVpiR0Hye3PXVs6kZiXmHGPWmIRFtdrq6bpH0exl8uWBvoW2cliWrPtbOddWPrAlk9Rs5dC7xkGLwdXCdQ6MgqeOuNXgN7ik5PW/lY2mFkPgIVs5+sVegre8fmX1b6H/gsi38FmA53ykkyvkmRqNA+eA7JcyuAru4Ne1HBGzHc06h2sU9CF2zKSWWmozbH8ANmOchfxWPXYAAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAiCAYAAAA3WXuFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKvSURBVHgB7ZY/aBRBFMZnU1qYE0O0ELwYTScGrETQS6GNogiCQdQoaiGCZwRLvUINQTSRgE1S5ApR0dagIhIRRBFBBBWD4kXxT+GfREUIHDp+L/ett67zNrtHUmUf/Jjded9782Z2dnaNSS211GaZedbaJrQDoDnkmwAPQKfneePSAW0WTT9YpuT7ALqgH3I5Ed+Fpl3GDbnegDzinkhBj3DTAIZDonrQBi5DeIAJX6Opc2h9y4EMaPInESjmLJojoKjEyXjzRfgd9Br3jLrBGMjwXuy0UQy+jdSsDfVn2X9SicvTP1nQDQ46xyFcBCZAgfeDDHyoJG5TCroPSmCBI0aKfS8av2MVkxSUQc6DH2Ae769I8rgF4Xo3+3YpMY/BR+7Pv53XwWf/0YQCGsE3cCFQYKyCOPuSTELRH6e+I+xopeOUEug/44MJCxoEv/6ZfVW7lNpuoyQ7w5XIKv4h7rUXssyKZiUH2QxW8PqYQ9fAlSv5W8GVLMPHNhzhv8UkWyI078AXFi/aOoeuD5TBEhNlELRzVnlTo3Hf9JLFDv96jlGIm7AIxkGLmQFD3qMsKBM3IMOlHrFyUE1/QfICyWE8kCSoBfwEN01CQ0w92Ae2Rmg6uUo7TFyDeBOD+k0C4+r6dht4ik5ekK/aW60lP5ykKFs99TvAfl73KFo5cD+BeyaJydvAxBen2oj2/4Oxh/fbFP0G+k+YhEXt5J4aiVpiR0Hye3PXVs6kZiXmHGPWmIRFtdrq6bpH0exl8uWBvoW2cliWrPtbOddWPrAlk9Rs5dC7xkGLwdXCdQ6MgqeOuNXgN7ik5PW/lY2mFkPgIVs5+sVegre8fmX1b6H/gsi38FmA53ykkyvkmRqNA+eA7JcyuAru4Ne1HBGzHc06h2sU9CF2zKSWWmozbH8ANmOchfxWPXYAAAAASUVORK5CYII=" alt=""></picture></a>
+								<!-- <a href="#" class="social__item"><picture><source srcset="data:image.webp;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAYAAACuoaIwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAR/SURBVHgB7ZZpqFVVFMfXvW/q+sySRpto+lBGUTSYRWEjBEWTFE1EFkV9iqw+VEJ9ahALEhoIEmwehaIsCgcQRUXFWZxQVESc8KnP5/Pec/z/3/4vz3rnKip+dcOPe+6+++611n+vtfYxOznCyPO8Quw4R+Vom2LgI78ZXx8Dd4LT9PMmMB18hTXr7EQHjAwGE8BOMA48AIaCYeAeMBHsAu96pMcVsUsELgKrwXdgCDgVDCoxEFwBpoPJmjuisUrZUJj/C6wEY0AraNG8r8lBBhrgFPAzmA9e4zzlPxZjZCQYC64F7TLGs3oK3AhqYBL4SUbr4HQwB9wKlnO+bLBSMlQNUf0JfgNt2vwXsEPzXPcyWKhIaOwAeFvPbyi6LBqrWnOkHWCYvPSomIlbwChF9Ct4GFwJhmsNnVoA7tJz09lVS/LxXM6UZFusOKc7wIySU11gCrhGczSwSv/lc2s5WfqMSVv3jnJk+s7BBFgLzpeRqhWKXAw2az3HWZZkbPF10WCMLNd3Lt4AbgibTJJs9wYFRoOrwOzg1FBLGezZW41JEi1XtYALmRhPamMuZna9KZaCJYBd5UVLcvt4FPxrRYn0a2ux6pkYAyxlHs+NrehVMK0k34VgH9imeZd9lBgudbhmPyLrKUfmZ+CF2iWvPwYjQoS5JN6quUxzXPsMeELqWPjdypHRmNdTTVFW5OWHls7la0vnYcExFvgr4BLwElgmA/tBN+hBZAf6GZPBdhlh62Gd3WIp0xaDZ8HdoBOssdQtKDUl+sFSJ7lO89O0hjJ2x8KOxlplbLT4XxteBr4EsyT3GfoLa2ogeAg8B1ZYkv8m8DT4D/Q2GdO5UWtGx8x7AayXtOyPzLLb9Z9dmh+g9Wxff4BFlpJlpNY+QmMWeqQXrhvmJoOtqKU2ncMSrTnbUnE35MxOK5KrVfPrwP1WZHDDDVTDpzfhz8An2tTn2xTFdkXAWtttRe/0Ir4NjLPUO1vCnoe8iVHx+xd6nmzp3Kj9TEu1497mVqQ2z5DdhWfFdvWBpY7TrqiyPL1f9N3I3jm8oDu18AJLGcaUvtRSLc0NRvjJumJXYTb+bemmoCPM0r2mwqZRGnMv41UTi3eKNv1Rz9xgjzbpVgQsjQ59xv0ONQtPEG+U3jn8mifngW/AVPCWpczaLbpklHX4uIxNkDqZJPd9cu+P3q78pu0V1H6iDH0kLxuSmI12TNiQ63lbr5LBDklXF02RWfhjp87gd/C5FVlFB/i6MA/cB963okTIO5Yy9VMZ69VZ9U99VbmHPcJSio+XvBzngG8tdRFGwZdV3mVj5Vymvd4DV4PL/WiaLk8Nv4NY1N1B+yHge0s9j97X5Pnz4FxLdVWTo3X91ul7xsvzcO2KicGzYhrzznpQxsYHBz2hmBCvW7rBKfv1YJDU6ZGUdTcYjXnXZ3Nl82WDZcH+Y0V9VYMCDSvqjbLy5t5oqXvwvvMSaZSNeVQ1ectrxruLR1GWOwu/xwvYb2kv6rp3/rhh+XU5s/5n6glkQc4Ybbk5xPm+cRDVPuUcwyxSawAAAABJRU5ErkJggg==" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAYAAACuoaIwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAR/SURBVHgB7ZZpqFVVFMfXvW/q+sySRpto+lBGUTSYRWEjBEWTFE1EFkV9iqw+VEJ9ahALEhoIEmwehaIsCgcQRUXFWZxQVESc8KnP5/Pec/z/3/4vz3rnKip+dcOPe+6+++611n+vtfYxOznCyPO8Quw4R+Vom2LgI78ZXx8Dd4LT9PMmMB18hTXr7EQHjAwGE8BOMA48AIaCYeAeMBHsAu96pMcVsUsELgKrwXdgCDgVDCoxEFwBpoPJmjuisUrZUJj/C6wEY0AraNG8r8lBBhrgFPAzmA9e4zzlPxZjZCQYC64F7TLGs3oK3AhqYBL4SUbr4HQwB9wKlnO+bLBSMlQNUf0JfgNt2vwXsEPzXPcyWKhIaOwAeFvPbyi6LBqrWnOkHWCYvPSomIlbwChF9Ct4GFwJhmsNnVoA7tJz09lVS/LxXM6UZFusOKc7wIySU11gCrhGczSwSv/lc2s5WfqMSVv3jnJk+s7BBFgLzpeRqhWKXAw2az3HWZZkbPF10WCMLNd3Lt4AbgibTJJs9wYFRoOrwOzg1FBLGezZW41JEi1XtYALmRhPamMuZna9KZaCJYBd5UVLcvt4FPxrRYn0a2ux6pkYAyxlHs+NrehVMK0k34VgH9imeZd9lBgudbhmPyLrKUfmZ+CF2iWvPwYjQoS5JN6quUxzXPsMeELqWPjdypHRmNdTTVFW5OWHls7la0vnYcExFvgr4BLwElgmA/tBN+hBZAf6GZPBdhlh62Gd3WIp0xaDZ8HdoBOssdQtKDUl+sFSJ7lO89O0hjJ2x8KOxlplbLT4XxteBr4EsyT3GfoLa2ogeAg8B1ZYkv8m8DT4D/Q2GdO5UWtGx8x7AayXtOyPzLLb9Z9dmh+g9Wxff4BFlpJlpNY+QmMWeqQXrhvmJoOtqKU2ncMSrTnbUnE35MxOK5KrVfPrwP1WZHDDDVTDpzfhz8An2tTn2xTFdkXAWtttRe/0Ir4NjLPUO1vCnoe8iVHx+xd6nmzp3Kj9TEu1497mVqQ2z5DdhWfFdvWBpY7TrqiyPL1f9N3I3jm8oDu18AJLGcaUvtRSLc0NRvjJumJXYTb+bemmoCPM0r2mwqZRGnMv41UTi3eKNv1Rz9xgjzbpVgQsjQ59xv0ONQtPEG+U3jn8mifngW/AVPCWpczaLbpklHX4uIxNkDqZJPd9cu+P3q78pu0V1H6iDH0kLxuSmI12TNiQ63lbr5LBDklXF02RWfhjp87gd/C5FVlFB/i6MA/cB963okTIO5Yy9VMZ69VZ9U99VbmHPcJSio+XvBzngG8tdRFGwZdV3mVj5Vymvd4DV4PL/WiaLk8Nv4NY1N1B+yHge0s9j97X5Pnz4FxLdVWTo3X91ul7xsvzcO2KicGzYhrzznpQxsYHBz2hmBCvW7rBKfv1YJDU6ZGUdTcYjXnXZ3Nl82WDZcH+Y0V9VYMCDSvqjbLy5t5oqXvwvvMSaZSNeVQ1ectrxruLR1GWOwu/xwvYb2kv6rp3/rhh+XU5s/5n6glkQc4Ybbk5xPm+cRDVPuUcwyxSawAAAABJRU5ErkJggg==" alt=""></picture></a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<span class="footer__copyright">© 2022-2023 POST PUB</span>
+				<a href="#" class="footer__konf">Политика конфиденциальности</a>
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20220802213711"></script>
+</body>
+
+</html>
