@@ -1642,7 +1642,37 @@ body {
   position: relative;
 }
 
-.about__wrapper {
+.about__slider{
+  position: relative;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  position: absolute;
+  top: 50%;
+  width: 53px;
+  height: 53px;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAACBCAMAAADQfiliAAAAe1BMVEUAAADRol2/lVXEnU7GnFXJlFHDllPFmVDFmFHGmlTFmFLEmVLFl1HGmFPHl1HFmFPFmFHGmFLHmVLGl1LFmVHGmFPFmFHGmVPHmVLHl1PGmVLGl1LGl1LGmFLGmFLGmFLFmFLGmFLGmFLGmFLGmFLGmFLGmFLGmFL///+nEzrPAAAAJ3RSTlMACwwNEhMiIzk6PkFYWVtcYWNkZ25vd3h6e5Ol5ebn6Ovs9PX5/f4mAUXZAAAAAWJLR0QovbC1sgAAAMpJREFUeNrt20cOwjAYBWETWkIJvUPo/Pe/IWITsWQ3Epk5wSdL9sZ6KZnZr2WTdZmRgPwcEVXBAbrX+HQbYIJVBEzYB03YBk3oPXDC9IUTZs+acB9KkCBBggQJEiRIkCBBggQJEiRIkCBBggQJEv6PsPj6jyhwwinDCWNGkA61YIOfwYgGHFuNvAtz+j0QIECAAAECBAgQIECAAAECBAgQIECAAAECBOBbnj6+Z9rhayZ+17bEt32dC71vTHkFbzxTapfwztWsEb0BriTFhKdRKeoAAAAASUVORK5CYII=');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+.swiper-button-next{
+  right: -10px;
+  
+}
+
+.swiper-button-prev{
+  left: -10px;
+  transform: rotate(180deg);
+}
+
+.about__slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1858,7 +1888,7 @@ body {
 
 .menu__bottom-pic {
   display: none;
-  max-width: 200px;
+  max-width: 300px;
   margin: 0 auto;
 }
 
@@ -2191,6 +2221,10 @@ body {
   display: none !important;
 }
 
+.about__head_mobile{
+  display: none;
+}
+
 @media (min-width: 1000px) {
   .button:hover {
     background-color: #E0AE61;
@@ -2222,7 +2256,7 @@ body {
 }
 
 @media (max-width: 1199px) {
-  .about__wrapper {
+  .about__slide {
     padding-left: 0;
   }
 }
@@ -2441,10 +2475,10 @@ body {
   }
 
   .about {
-    padding-top: 121px;
+    padding-top: 40px;
   }
 
-  .about__wrapper {
+  .about__slide {
     display: block;
   }
 
@@ -2456,12 +2490,22 @@ body {
     margin: 0 auto;
   }
 
-  .about__head {
+  /* .about__head {
     position: absolute;
     top: 43px;
     left: 0;
     right: 0;
     text-align: center;
+  } */
+
+  .about__head{
+    display: none;
+  }
+
+  .about__head.about__head_mobile {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .about__quote {

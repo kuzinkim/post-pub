@@ -6789,6 +6789,15 @@
                     disableOnInteraction: false
                 }
             });
+
+            new core(".about__slider .swiper", {
+                modules: [ Navigation ],
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();
