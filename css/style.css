@@ -1646,6 +1646,18 @@ body {
   position: relative;
 }
 
+@media (max-width:1199px){
+  .about__slider{
+    padding: 0 40px;
+  }
+}
+
+@media (max-width:500px){
+  .about__slider{
+    padding: 0 10px;
+  }
+}
+
 .swiper-button-next, .swiper-button-prev{
   position: absolute;
   top: 50%;
@@ -1660,6 +1672,13 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
+}
+
+@media (max-width:500px){
+  .swiper-button-next, .swiper-button-prev{
+    width: 23px;
+    height: 23px;
+  }
 }
 
 .swiper-button-next{
