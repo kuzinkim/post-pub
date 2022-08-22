@@ -1644,6 +1644,7 @@ body {
 
 .about__slider{
   position: relative;
+  margin-top: 60px;
 }
 
 @media (max-width:1199px){
@@ -1709,7 +1710,7 @@ body {
   background-image: url(../img/Subtract.png); }
 
 .about__person {
-  max-width: 480px;
+  max-width: 540px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -2079,7 +2080,8 @@ body {
 }
 
 .booking__title,
-.booking__subtitle {
+.booking__subtitle,
+.about__title{
   text-align: center;
 }
 
