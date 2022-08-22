@@ -1653,6 +1653,12 @@ body {
   }
 }
 
+@media (max-width:767px){
+  .about__slider{
+    margin-top: 10px;
+  }
+}
+
 @media (max-width:500px){
   .about__slider{
     padding: 0 10px;
