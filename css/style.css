@@ -1712,6 +1712,16 @@ body {
   width: calc(50% - 20px);
 }
 
+.about__item:nth-child(2) {
+  padding-right: 40px;
+}
+
+@media(max-width:1199px){
+  .about__item:nth-child(2) {
+    padding-right: 0;
+  }
+}
+
 .no-webp .about__person{
   background-image: url(../img/Subtract.png); }
 
