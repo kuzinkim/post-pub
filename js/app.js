@@ -10553,10 +10553,10 @@
             function init() {
                 var myMap = new ymaps.Map("map", {
                     controls: [],
-                    center: [ 55.779585, 37.698191 ],
+                    center: [55.779665, 37.698884],
                     zoom: 18
                 });
-                let myPlacemark = new ymaps.Placemark([ 55.779585, 37.699291 ], {}, {
+                let myPlacemark = new ymaps.Placemark([ 55.779665, 37.698884 ], {}, {
                     balloonContentHeader: "Mistoun",
                     balloonContentBody: "Мы Здесь",
                     balloonContentFooter: "+ 7(495) 507-54 - 90",
@@ -10566,7 +10566,7 @@
                 myMap.geoObjects.add(myPlacemark);
                 myMap.behaviors.disable("scrollZoom");
                 myMap.behaviors.disable("drag");
-                if (window.matchMedia("(max-width: 576px)").matches) myMap.setCenter([ 55.779585, 37.699291 ]);
+                if (window.matchMedia("(max-width: 576px)").matches) myMap.setCenter([ 55.779665, 37.698884 ]);
             }
         }
         window.addEventListener("load", (function(e) {
